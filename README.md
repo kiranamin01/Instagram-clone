@@ -1,2 +1,3 @@
 # Instagram-clone
-building  Instagram clone App 
+
+=> Building  Instagram clone App - DAY 1 - LAYOUTS
