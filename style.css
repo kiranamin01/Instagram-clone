@@ -1,0 +1,107 @@
+body {
+    /* background-color: rgb(166, 197, 119); */
+    background-color: white;
+
+    width: 100%;
+    height: 100%;
+    font-family:'Courier New', Courier, monospace
+}
+
+.main_body {
+    background-color: rgb(189, 207, 162);
+    width: 100%;
+    height: 100%;
+
+    /* position: absolute; */
+}
+
+.insta_body {
+    width: 400px;
+    height: 700px;
+    background-color: whitesmoke;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content:stretch;
+}
+
+.insta_nav {
+
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 2px solid black;  */
+}
+
+.insta_nav > i {
+    scale: 1.2;
+    margin: 0 25px;
+} 
+
+.insta_logo {
+    font-family: 'Satisfy', cursive;
+}
+
+nav>i {
+    margin: 0 15px;
+}
+
+
+
+
+/* ---------------- INSTA STORY --------------- */
+
+.insta_story {
+    border: 1px solid black;
+
+    width: 100%;
+    height: 80px;
+}
+
+
+
+
+/* ---------------- INSTA FEED --------------- */
+
+
+.insta_feed {
+    background-color: bisque;
+}
+
+
+
+
+
+
+/* ---------------- INSTA FOOTER --------------- */
+
+footer {
+    display: flex;
+    margin-bottom: auto;
+}
+
+.insta_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    border-top: 1px solid gray;;
+    
+
+    width: 100%;
+    height: 30px;
+
+    margin-top: 125%;
+}
+
+
+footer > i {
+    scale: 1.3;
+    margin-top: 10px;
+}
