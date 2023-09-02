@@ -1,4 +1,5 @@
 # Instagram-clone
 
-=> Building  Instagram clone App - DAY 1 - LAYOUTS <br>
-=> Build Instagram clone App     - DAY 2 - Complete UI
+=> Building  Instagram clone Mobile App  - DAY 1 - <br>
+=> Made Complete App UI          - DAY 2 - Instagram Clone <br>
+=> Added Profile Page            - DAY 3 - Instagram Clone <br>
