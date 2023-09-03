@@ -33,12 +33,14 @@
 
     width: 350px;
     height: 700px;
-    background-color: whitesmoke;
+    background-color: #f6f5f4;
 
     border-radius: 30px;
 
     position: absolute;
 
+    margin: 10px 12px;
+    padding: 10px 12px;
 }
 
 
@@ -79,9 +81,30 @@ nav>i::hover {
 
     width: 100%;
     height: 80px;
+
+    /* border: 2px solid black; */
 }
 
 
+.insta_story_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+    padding: 3px;
+}
+
+.insta_story_box > img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin: 2px;
+}
+
+.insta_story_box > h6 {
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 600;
+}
 
 
 /* ---------------- INSTA FEED --------------- */
@@ -90,6 +113,10 @@ nav>i::hover {
 .insta_feed {
     /* background-color: bisque; */
     margin-left: 1px;
+
+    /* border: 2px solid black; */
+    width: 98%;
+    height: 495px;
 }
 
 .insta_feed_profile {
@@ -123,72 +150,67 @@ nav>i::hover {
     margin: 5px;
     object-fit: cover;
 
-    width: 90%;
-    height: 350px;
+    width: 100%;
+    height: 360px;
 
-    border-radius: 5px;
+    border-radius: 4px;
 
 }
 
 
 
 .insta_feed_status{
-    margin: 0 0 0 25px;
+    margin: 0 0 0 5px;
+
 }
 
 .insta_feed_status>i {
-    margin: 2px 2px 6px 6px;
-    scale: 1.4;
+    margin: 2px 2px 2px 8px;
+    font-size: 1.5rem;
 }
 
 .insta_feed_comment > h5 , h4 {
     font-size: 12px;
-    margin-left: 25px;
+    margin-left: 10px;
     margin-top: 2px;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+.insta_feed_profile_username {
+    font-family: 'Poppins' , sans-serif;
 }
 
 
 
 
-
-
-.insta_footer > hr.solid {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-bottom: 60px;
-    border-top: 3px solid #bbb;
-}
 
 /* ---------------- INSTA FOOTER --------------- */
 
-
+.insta_footer_ul > li> a > i {
+    font-size: 1.8rem;
+    padding: 2px 5px;
+    margin: 1px 0.9rem;
+    
+}
 
 .insta_footer_ul {
     display: flex;
-    justify-content: space-between;
-
-    margin: 10px 20px;
-    margin-top: 55px;
-    list-style: none; 
-
+    list-style: none;
+    
 }
 
-.insta_footer_ul > li > a {
+.insta_footer_ul > li> a {
     text-decoration: none;
-    color: black;
-}
-
-
-.insta_footer_ul > li > a > i {
-    font-size: 26px;
-
-
-}
-
-.solid {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    justify-content: space-around;
+
+
 }
 
+.insta_footer_ul > li> a > i {
+    font-size: 1.8rem;
+    padding: 2px 5px;
+    margin: 1px 0.9rem;
+    
+}
