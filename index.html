@@ -1,75 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram Clone</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
 
+    <!-- TAILWIND CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- REMIX ICON -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-        
-        <!--  -->
-</head>
-<body>
-    <div class="main_body">
-        <div class="insta_body">
-            <nav class="status_bar">.</nav>
-            <nav class="insta_nav">
-                <i class="ri-camera-line"></i>
-                <h2 class="insta_logo">Instagram</h2>
-                <i class="ri-send-plane-fill"></i>
-            </nav>
-            <section class="insta_story">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-            </section>
-            <!-- INSTA FEED  -->
+    <!--  -->
+  </head>
+  <body>
+    <div class="main_body my-2 mb-5">
+      <div class="insta_body relative">
+        <nav
+          class="navbar flex justify-between items-center text-[2.1rem] mx-2"
+        >
+          <i class="ri-camera-line"></i>
+          <h3 class="text-2xl font-[Sour_Gummy]">Instagram</h3>
+          <i class="ri-send-plane-fill"></i>
+        </nav>
 
-            <section class="insta_feed">
-                    <div class="insta_feed_profile">
-                        <img  class="profile_pic" src="./images/profile-pic-insta01.png" alt="profile_pic">
-                        <h4 class="insta_feed_profile_username">kiranamin.img</h4>
-                    </div>
-                    <div class="insta_feed_pic">
-                        <img class="insta_feed_pic_src" src="./images/BorivaliPic.jpg" alt="insta_feed_pic">
-                    </div>
-                    <div class="insta_feed_status">
-                        <i class="ri-heart-line"></i>
-                        <i class="ri-chat-1-line"></i>
-                        <i class="ri-share-forward-line"></i>    
-                    </div>
-                    <div class="insta_feed_comment">
-                        <h4>619000 views </h4>
-                        <h5>View all 10.2K comments</h5>
-                    </div>
-                    
-                </section>
-                
-                
-                <!-- INSTA FOOTER -->
-                <footer class="insta_footer">
-                    <hr class="solid">    
-                    <i class="ri-home-5-fill"></i>
-                    <i class="ri-search-line"></i>
-                    <i class="ri-add-box-line"></i>
-                    <i class="ri-heart-line"></i>
-                    <i class="ri-user-3-line"></i>
+        <!-- INSTAGRAM STATUS  -->
+        <section
+          class="insta_story flex flex-nowrap overflow-auto gap-3 border border-gray-600/25 my-5 py-3"
+        >
+          <img class="w-18" src="https://avatar.iran.liara.run/public" alt="" />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/21"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/27"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/28"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/29"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/21"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/23"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/22"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/24"
+            alt=""
+          />
+          <img
+            class="w-18"
+            src="https://avatar.iran.liara.run/public/37"
+            alt=""
+          />
+        </section>
 
-            </footer>
-        </div>
+        <!-- INSTAGRAM FEED  -->
+
+        <section class="insta_feed">
+          <div class="insta_post">
+            <div class="insta_post_head">
+              <div
+                class="insta_post_profile_box flex justify-between items-center mx-2 my-4"
+              >
+                <div class="insta_post_profile_info flex items-center">
+                  <div class="insta_post_profile_info_img">
+                    <img
+                      class="profile_pic w-10 rounded-full"
+                      src="./images/profile-pic-insta01.png"
+                      alt="profile_pic"
+                    />
+                  </div>
+                  <div class="insta_post_profile_info_text mx-2 leading-5">
+                    <div
+                      class="insta_post_profile_info_text_username flex items-center"
+                    >
+                      <h4 class="insta_post_profile_username font-semibold">
+                        kiranamin.img
+                      </h4>
+                      <img
+                        class="w-4 ml-1"
+                        src="./images/verified.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <h3
+                      class="insta_post_profile_location font-[Poppins] text-sm"
+                    >
+                      Mumbai, India
+                    </h3>
+                  </div>
+                </div>
+                <div class="insta_post_profile_btn text-[1.5rem]">
+                  <i class="ri-more-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="insta_post_image">
+              <div class="insta_feed_pic">
+                <img
+                  class="insta_feed_pic_src"
+                  src="./images/BorivaliPic.jpg"
+                  alt="insta_feed_pic"
+                />
+              </div>
+            </div>
+            <div class="insta_post_btn mx-2">
+              <div class="insta_post_status text-[2.1rem]">
+                <i class="ri-heart-line text-[2.1rem]"></i>
+                <i class="ri-chat-1-line text-[2.1rem]"></i>
+                <i class="ri-share-forward-line text-[2.1rem]"></i>
+              </div>
+            </div>
+            <div class="insta_post_like_info mx-2">
+              <h4>
+                Liked by <span class="font-semibold">iamsrk</span> and
+                <span class="font-semibold">55,546 others</span>
+              </h4>
+            </div>
+            <div class="insta_post_comment mx-2">
+              <h4>
+                <span class="font-semibold">kiranamin.img</span> Nature 🏞️
+              </h4>
+              <h5>View all 10.2K comments</h5>
+            </div>
+          </div>
+        </section>
+
+        <!-- INSTA FOOTER -->
+        <footer class="insta_footer mx-3 mb-4 sticky top-0">
+          <hr class="solid" />
+          <ul class="insta_footer_ul flex justify-around text-[2.2rem]">
+            <li>
+              <a href="./profile.html"> <i class="ri-home-5-fill"></i> </a>
+            </li>
+            <li>
+              <a href="./profile.html"> <i class="ri-search-line"></i> </a>
+            </li>
+            <li>
+              <a href="./profile.html"> <i class="ri-add-box-line"></i> </a>
+            </li>
+            <li>
+              <a href="./profile.html"> <i class="ri-heart-line"></i> </a>
+            </li>
+            <li>
+              <a href="./profiles.html"> <i class="ri-user-3-line"></i> </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </div>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>

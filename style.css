@@ -18,7 +18,7 @@
     height: 100%;
 
     display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
 
 }
@@ -66,6 +66,9 @@ nav>i {
     margin: 0 15px;
 }
 
+nav>i::hover {
+    cursor: pointer;
+}
 
 
 
@@ -161,16 +164,31 @@ nav>i {
 
 
 
-.insta_footer {
+.insta_footer_ul {
     display: flex;
     justify-content: space-between;
 
     margin: 10px 20px;
     margin-top: 55px;
+    list-style: none; 
+
 }
 
-footer > i {
-   font-size: 26px;
+.insta_footer_ul > li > a {
+    text-decoration: none;
+    color: black;
+}
 
+
+.insta_footer_ul > li > a > i {
+    font-size: 26px;
+
+
+}
+
+.solid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
