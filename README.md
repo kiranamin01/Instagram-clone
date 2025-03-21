@@ -1,3 +1,7 @@
+
+21/03/2025 - DAY6-8 - Add Dark Mode , React , completely responsive , Profile,Search,Home - completely functionality
+
+
 Features
 Login
 Signup
